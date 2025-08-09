@@ -1,5 +1,5 @@
 # Python-based-web-scraper
-This project is a **web scraping task** completed as part of my **AI/ML Internship at Konecta**.
+This project is a **web scraping task** completed as part of my **AI/ML Internship @ Konecta**.
 
 ## 📌 Task Overview
 The goal is to build a **Python-based web scraper** that collects structured product data from an e-commerce website.
