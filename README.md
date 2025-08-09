@@ -30,3 +30,19 @@ The scraper collects:
    ```bash
    git clone https://github.com/yourusername/python-based-web-scraper.git
    cd python-based-web-scraper
+2. Install dependencies:
+   ```bash
+   pip install -r requirements.txt
+3. Run the scraper:
+   ```bash
+   python scraper.py
+4. The results will be saved as:
+   products.csv
+## 📂 Project Structure
+
+python-based-web-scraper/
+│
+├── scraper.py         # Main Python script for scraping
+├── requirements.txt   # List of dependencies
+├── README.md          # Project documentation
+└── products.csv       # Output file (generated after running)
