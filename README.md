@@ -37,9 +37,10 @@ The scraper collects:
    ```bash
    python scraper.py
 4. The results will be saved as:
+    ```bash
    products.csv
 ## 📂 Project Structure
-
+```bash
 python-based-web-scraper/
 │
 ├── scraper.py         # Main Python script for scraping
