@@ -8,12 +8,10 @@ from webdriver_manager.chrome import ChromeDriverManager
 import time
 import csv
 
-# ---------- SETTINGS ----------
 BASE_URL = "https://www.newegg.com/All-Laptop/SubCategory/ID-32/Page-{}"
 TARGET_COUNT = 100
 OUTPUT_FILE = "newegg_laptops.csv"
 
-# ---------- FUNCTIONS ----------
 def start_driver(headless=True):
     chrome_options = Options()
     if headless:
@@ -97,7 +95,6 @@ def scrape_newegg(driver):
 
     return data
 
-# ---------- MAIN ----------
 try:
     print("Running headless mode first...")
     driver = start_driver(headless=True)
@@ -111,11 +108,11 @@ try:
 finally:
     driver.quit()
 
-# ---------- SAVE ----------
 with open(OUTPUT_FILE, "w", newline="", encoding="utf-8") as f:
     writer = csv.writer(f)
     writer.writerow(["Product Name", "Price", "Rating", "Reviews", "Product URL", "Image URL", "Brand"])
     writer.writerows(products)
 
 print(f"✅ Scraped {len(products)} products. Saved to {OUTPUT_FILE}")
+
    
