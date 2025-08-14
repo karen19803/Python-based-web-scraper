@@ -37,29 +37,23 @@ The scraper collects:
 3. Run the scraper:
    ```bash
    python scraper.py
-4. The results will be saved as:
-   ```bash
-   newegg_laptops.csv
-
 ## 📂 Project Structure
-   ```bash
-   python-based-web-scraper/
-   │
-   ├── scraper.py         # Main Python script for scraping
-   ├── requirements.txt   # List of dependencies
-   ├── README.md          # Project documentation
-   └── newegg_laptops.csv       # Output file (generated after running)
-
+```bash
+python-based-web-scraper/
+│
+├── scraper.py         # Main Python script for scraping
+├── requirements.txt   # List of dependencies
+├── README.md          # Project documentation
+└── newegg_laptops.csv # Output file (generated after running)
+```
 ## 📊 Workflow
-
-The scraper includes a **headless mode with fallback:**
-
+The scraper includes a **headless mode with fallback**:
 - Starts in headless mode for speed.
 - If the site blocks headless browsing, it retries in visible mode automatically.
 - Saves the final results in a CSV.
 
-## Flowchart
-   ```mermaid
+## 📈 Flowchart
+```mermaid
 flowchart TD
     A[Start Scraper] --> B[Launch Browser in Headless Mode]
     B --> C{Headless Blocked?}
@@ -68,5 +62,6 @@ flowchart TD
     E --> D[Scrape Product Data]
     D --> F[Save Results to CSV]
     F --> G[End]
+```
 
 
